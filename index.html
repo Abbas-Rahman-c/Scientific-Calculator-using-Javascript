@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scientific Calculator</title>
+
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.2.1/math.js"></script>
+
+</head>
+
+<body>
+    <h1 style="margin-top: 200px; text-align: left;">Scientific Calculator</h1>
+    <div class="Calculator" id="bg_color" style="margin-left: 40%; width: auto;">
+        <div>
+            <input type="text" name="Kyepad" id="text">
+        </div>
+
+        <div class="buttons">
+            <input type="button" value="Round" class="A_Button" onclick="appendToExpression('round(')">
+            <input type="button" value="E" class="A_Button" onclick="appendToExpression('exp(')">
+            <input type="button" value="Cbrt" class="A_Button" onclick="appendToExpression('cbrt(')">
+            <input type="button" value="Floor" class="A_Button" onclick="appendToExpression('floor(')">
+            <input type="button" value="Ceil" class="A_Button" onclick="appendToExpression('ceil(')">
+        </div>
+        
+        <div class="buttons">
+            <input type="button" value="Sin" class="A_Button" onclick="appendToExpression('sin(pi/180*')">
+            <input type="button" value="Cos" class="A_Button" onclick="appendToExpression('cos(pi/180*')">
+            <input type="button" value="Tan" class="A_Button" onclick="appendToExpression('tan(pi/180*')">
+            <input type="button" value="(" class="A_Button" onclick="appendToExpression('(')">
+            <input type="button" value=")" class="A_Button" onclick="appendToExpression(')')">
+        </div>
+        <div class="buttons">
+            <input type="button" value="Log" class="A_Button" onclick="appendToExpression('log10(')">
+            <input type="button" value="x" class="A_Button" onclick="appendToExpression('x')">
+            <input type="button" value="√" class="A_Button" onclick="appendToExpression('sqrt(')">
+            <input type="button" value="^" class="A_Button" onclick="appendToExpression('^')">
+            <input type="button" value="Derivative" class="A_Button" onclick="computeDerivative()">
+        </div>
+        <div class="buttons">
+            <input type="button" value="7" class="A_Button" onclick="appendToExpression('7')">
+            <input type="button" value="8" class="A_Button" onclick="appendToExpression('8')">
+            <input type="button" value="9" class="A_Button" onclick="appendToExpression('9')">
+            <input type="button" value="AC" class="A_Button" onclick="clearExpression()">
+            <input type="button" value="DEL" class="A_Button" onclick="deleteLastCharacter()">
+        </div>
+        <div class="buttons">
+            <input type="button" value="4" class="A_Button" onclick="appendToExpression('4')">
+            <input type="button" value="5" class="A_Button" onclick="appendToExpression('5')">
+            <input type="button" value="6" class="A_Button" onclick="appendToExpression('6')">
+            <input type="button" value="*" class="A_Button" onclick="appendToExpression('*')">
+            <input type="button" value="/" class="A_Button" onclick="appendToExpression('/')">
+        </div>
+        <div class="buttons">
+            <input type="button" value="1" class="A_Button" onclick="appendToExpression('1')">
+            <input type="button" value="2" class="A_Button" onclick="appendToExpression('2')">
+            <input type="button" value="3" class="A_Button" onclick="appendToExpression('3')">
+            <input type="button" value="-" class="A_Button" onclick="appendToExpression('-')">
+            <input type="button" value="+" class="A_Button" onclick="appendToExpression('+')">
+        </div>
+        <div class="buttons">
+            <input type="button" value="0" class="A_Button" onclick="appendToExpression('0')">
+            <input type="button" value="00" class="A_Button" onclick="appendToExpression('00')">
+            <input type="button" value="." class="A_Button" onclick="appendToExpression('.')">
+            <input type="button" value="π" class="A_Button" onclick="appendToExpression('pi')">
+            <input type="button" value="=" class="A_Button" onclick="calculateResult()">
+        </div>
+    </div> 
+    <script src="Scientific.js"></script>  
+</body>
+
+</html>

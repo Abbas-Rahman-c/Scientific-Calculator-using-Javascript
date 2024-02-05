@@ -1,0 +1,50 @@
+  /* Your CSS styles here */
+  body {
+    background:linear-gradient(to left,#7808f0,#06bdf5);
+    color: white;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 300%;
+    text-decoration: underline;
+}
+table{
+    border: 10px beige;
+}
+.Calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+#text {
+    width: 440px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.buttons {
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.A_Button {
+    width: 90px;
+    padding: 20px;
+    border-color: purple;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.A_Button:hover {
+    background-color: skyblue;
+    color: white;
+    border-color: white;
+  }
